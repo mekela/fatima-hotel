@@ -1,0 +1,366 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- booking -->
+<div class="booking" style="background-image: url(img/main-bg.jpg)">
+    <div class="container">
+        <div class="booking__section">
+            <div class="row pb-25 align-items-center">
+                <div class="col-lg-6"><h6><img src="img/tick-inside-circle.png" alt=""> CHECK AVAILABILITY</h6></div>
+                <div class="col-lg-6"><a href="#" class="promocode">Promotional Code</a></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="booking__title">Choose hotel</div>
+                    <div class="booking__item">
+                        <select>
+                            <option>All hotels</option>
+                            <option>Choose hotel3</option>
+                            <option>Choose hotel2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="booking__title">Check in</div>
+                    <div class="booking__item">
+                       <input type="text" value="16 August" class='datepicker-here' >
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="booking__title">Check out</div>
+                    <div class="booking__item">
+                       <input type="text" value="16 August" class='datepicker-here' >
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="booking__title">Adults</div>
+                    <div class="booking__item">
+                        <select>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="booking__title">Children</div>
+                    <div class="booking__item">
+                        <select>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <button class="button">Book now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /booking -->
+<!-- promotion -->
+<div class="promotion">
+    <div class="container">
+        <div class="title">PROMOTIONS</div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="promotion__item">
+                    <figure><img src="img/tag-img.png" alt=""></figure>
+                    <div class="promotion__text">
+                        <p>2 Night Getaway
+                            Enjoy a few days away from the routine!</p>
+                    </div>
+                    <div class="text_center">
+                        <a href="#" class="button">Book now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="promotion__item">
+                    <figure><img src="img/tag-img.png" alt=""></figure>
+                    <div class="promotion__text">
+                        <p>The Essential of Fátima - guided tour to the Sanctuary
+                                Join us in a spiritual experience through the paths of Faith!
+                                Sunday at 9am, from August to September</p>
+                    </div>
+                    <div class="text_center">
+                        <a href="#" class="button">Book now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="promotion__item">
+                    <figure><img src="img/tag-img.png" alt=""></figure>
+                    <div class="promotion__text">
+                        <p>Accommodation with offer of tickets to visit the Museum of Leiria</p>
+                    </div>
+                    <div class="text_center">
+                        <a href="#" class="button">Book now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="promotion__item">
+                    <figure><img src="img/tag-img.png" alt=""></figure>
+                    <div class="promotion__text">
+                        <h5>PROMO: HOTEL + WAX MUSEUM OF FÁTIMA</h5>
+                        <p>
+                                One night with offer of tickets to the Wax Museum of Fatima</p>
+                    </div>
+                    <div class="text_center">
+                        <a href="#" class="button">Book now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /promotion -->
+<!-- group -->
+<div class="group">
+    <div class="container">
+        <div class="title">FATIMA HOTELS GROUP</div>
+        <div class="row">
+            <div class="col-lg-6 ">
+                <div class="group__item">
+                    <div class="group__logo">
+                        <a href="#"><img src="img/logo-group1.png" alt=""></a>
+                    </div>
+                    <div class="group__section" style="background-image: url(img/group-img.jpg);">
+                        <article>
+                            <h6>A SOUL EXPERIENCE</h6>
+                            <nav>
+                                <a href="#" class="button empty">See hotel</a>
+                                <a href="#" class="button">Book now</a>
+                            </nav>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 ">
+                <div class="group__item">
+                    <div class="group__logo">
+                        <a href="#"><img src="img/logo-group6.png" alt=""></a>
+                    </div>
+                    <div class="group__section" style="background-image: url(img/group-img.jpg);">
+                        <article>
+                            <h6>A SOUL EXPERIENCE</h6>
+                            <nav>
+                                <a href="#" class="button empty">See hotel</a>
+                                <a href="#" class="button">Book now</a>
+                            </nav>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 ">
+                <div class="group__item">
+                    <div class="group__logo">
+                        <a href="#"><img src="img/logo-group2.png" alt=""></a>
+                    </div>
+                    <div class="group__section" style="background-image: url(img/group-img.jpg);">
+                        <article>
+                            <h6>A SOUL EXPERIENCE</h6>
+                            <nav>
+                                <a href="#" class="button empty">See hotel</a>
+                                <a href="#" class="button">Book now</a>
+                            </nav>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 ">
+                <div class="group__item">
+                    <div class="group__logo">
+                        <a href="#"><img src="img/logo-group7.png" alt=""></a>
+                    </div>
+                    <div class="group__section" style="background-image: url(img/group-img.jpg);">
+                        <article>
+                            <h6>A SOUL EXPERIENCE</h6>
+                            <nav>
+                                <a href="#" class="button empty">See hotel</a>
+                                <a href="#" class="button">Book now</a>
+                            </nav>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 ">
+                <div class="group__item">
+                    <div class="group__logo">
+                        <a href="#"><img src="img/logo-group3.png" alt=""></a>
+                    </div>
+                    <div class="group__section" style="background-image: url(img/group-img.jpg);">
+                        <article>
+                            <h6>A SOUL EXPERIENCE</h6>
+                            <nav>
+                                <a href="#" class="button empty">See hotel</a>
+                                <a href="#" class="button">Book now</a>
+                            </nav>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 ">
+                <div class="group__item">
+                    <div class="group__logo">
+                        <a href="#"><img src="img/logo-group8.png" alt=""></a>
+                    </div>
+                    <div class="group__section" style="background-image: url(img/group-img.jpg);">
+                        <article>
+                            <h6>A SOUL EXPERIENCE</h6>
+                            <nav>
+                                <a href="#" class="button empty">See hotel</a>
+                                <a href="#" class="button">Book now</a>
+                            </nav>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 ">
+                <div class="group__item">
+                    <div class="group__logo">
+                        <a href="#"><img src="img/logo-group4.png" alt=""></a>
+                    </div>
+                    <div class="group__section" style="background-image: url(img/group-img.jpg);">
+                        <article>
+                            <h6>A SOUL EXPERIENCE</h6>
+                            <nav>
+                                <a href="#" class="button empty">See hotel</a>
+                                <a href="#" class="button">Book now</a>
+                            </nav>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 ">
+                <div class="group__item">
+                    <div class="group__logo">
+                        <a href="#"><img src="img/logo-group9.png" alt=""></a>
+                    </div>
+                    <div class="group__section" style="background-image: url(img/group-img.jpg);">
+                        <article>
+                            <h6>A SOUL EXPERIENCE</h6>
+                            <nav>
+                                <a href="#" class="button empty">See hotel</a>
+                                <a href="#" class="button">Book now</a>
+                            </nav>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 ">
+                <div class="group__item">
+                    <div class="group__logo">
+                        <a href="#"><img src="img/logo-group5.png" alt=""></a>
+                    </div>
+                    <div class="group__section" style="background-image: url(img/group-img.jpg);">
+                        <article>
+                            <h6>A SOUL EXPERIENCE</h6>
+                            <nav>
+                                <a href="#" class="button empty">See hotel</a>
+                                <a href="#" class="button">Book now</a>
+                            </nav>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 ">
+                <div class="group__item">
+                    <div class="group__logo">
+                        <a href="#"><img src="img/logo-group10.png" alt=""></a>
+                    </div>
+                    <div class="group__section" style="background-image: url(img/group-img.jpg);">
+                        <article>
+                            <h6>A SOUL EXPERIENCE</h6>
+                            <nav>
+                                <a href="#" class="button empty">See hotel</a>
+                                <a href="#" class="button">Book now</a>
+                            </nav>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="group__text">
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <a href="#"><img src="img/logo-group11.png" alt=""></a>
+                </div>
+                <div class="col-md-9">
+                    <p>Fátima Hotels Group is the largest representative of hospitality services in Fátima, with an offer of ten hotel units: Aurea Fátima Hotel Congress & Spa, Hotel Estrela de Fátima, Hotel Regina, Hotel Coração de Fátima, Hotel Cruz Alta, Hotel Genesis, Hotel Santa Mafalda, Imperhotel, Hotel Rosa Mística and Casas de Campo Luz Houses (Luz Houses Country Cottages). The ownership and management of each unit is different, although business activities are...</p>
+                </div>
+                <div class="col-md-1">
+                    <a href="#" class="group__plus"><img src="img/plus.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /group -->
+<!-- text -->
+<div class="text">
+    <div class="container">
+        <div class="title">PLACES TO VISIT IN FÁTIMA AND SURROUNDINGS</div>
+        <p>Fatima, alb and serene, raises imponent its Sanctuary which charms at first sight. Mystic land, relentless search of faith, safe haven of all who seek light, harmony and peace. Fátima, visited by millions, who remind, in a singular miracle of extreme motivation. Land of aching and returns, that always offers the necessary stillness to who bravely crosses its ways. Throughout the year, thousands of pilgrims set their course to the World’s Altar to kneel before Our Lady of Fátima, in...</p>
+        <div class="text__info">
+            <a href="#">
+                Information
+                <img src="img/plus.png" alt="">
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="text__item">
+                    <img src="img/museum.png" alt="">
+                    <article>
+                        <h5>WAX MUSEUM</h5>
+                        <p>Placed 100 meters from the Sanctuary, this magnificent Wax Museum gives you the opportunity, through scenes of great realism, to revive the most relevant happenings that Fátima has celebrated as the World’s Altar.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="text__item">
+                    <img src="img/museum.png" alt="">
+                    <article>
+                        <h5>WAX MUSEUM</h5>
+                        <p>Placed 100 meters from the Sanctuary, this magnificent Wax Museum gives you the opportunity, through scenes of great realism, to revive the most relevant happenings that Fátima has celebrated as the World’s Altar.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="text__item">
+                    <img src="img/museum.png" alt="">
+                    <article>
+                        <h5>WAX MUSEUM</h5>
+                        <p>Placed 100 meters from the Sanctuary, this magnificent Wax Museum gives you the opportunity, through scenes of great realism, to revive the most relevant happenings that Fátima has celebrated as the World’s Altar.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="text__item">
+                    <img src="img/museum.png" alt="">
+                    <article>
+                        <h5>WAX MUSEUM</h5>
+                        <p>Placed 100 meters from the Sanctuary, this magnificent Wax Museum gives you the opportunity, through scenes of great realism, to revive the most relevant happenings that Fátima has celebrated as the World’s Altar.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /text -->
+<div class="subscribe">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-3"><h6>NEWSLETTER</h6></div>
+            <div class="col-lg-3"><input type="text"></div>
+            <div class="col-lg-3"><input type="text"></div>
+            <div class="col-lg-3"><input type="submit" class="button" value="Submit"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

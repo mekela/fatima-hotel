@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="initial-scale=1"/>
+  <title>title</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!--build:css css/styles.min.css-->
+  <link rel="stylesheet" href="css/datepicker.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!--endbuild-->
+</head>
+<body>
+<div class="wrapper">
+<!--header-->
+<header class="header">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5 col-7">
+        <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+      </div>
+      <div class="col-lg-7 col-5">
+        <button class="header__trigger"><i class="fas fa-bars"></i></button>
+        <div class="header__main">
+          <button class="header__close"><i class="fas fa-times"></i></button>
+          <div class="header__info">
+            <div class="row">
+              <div class="col-lg-5">FATIMA HOTELS GROUP </div>
+              <div class="col-lg-7 text_right">
+                <a href="mailto:booking@fatima-hotels.com">booking@fatima-hotels.com</a>
+                <div class="header__lang">
+                  <div class="header__lang-active">EN <img src="img/en.png" alt="En"></div>
+                  <nav class="header__lang-list">
+                    <ul>
+                      <li><a href="#" class="active">EN <img src="img/en.png" alt="En"></a></li>
+                      <li><a href="#">FR <img src="img/en.png" alt="Fr"></a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__menu">
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">FATIMA HOTELS GROUP</a></li>
+              <li><a href="#">PROMOTIONS</a></li>
+              <li><a href="#">VISIT</a></li>
+              <li><a href="#">CONTACTS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--end-header-->
+<!--main-->
+<div class="main">
+
+  
+   {% block content %} {% endblock %}
+  
+
+</div>
+<!--end-main-->
+<!--footer-->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <a href="/" class="footer__logo"><img src="img/logo-footer.png" alt=""></a>
+        <div class="footer__social">
+          <strong>FOLLOW US</strong>
+          <nav>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </nav>
+        </div>
+      </div>
+      <div class="col-lg-3  col-sm-6">
+        <div class="footer__title">OUR HOTELS</div>
+        <nav class="footer__menu">
+          <ul>
+            <li><a href="#">Luz Charming Houses</a></li>
+            <li><a href="#">Aurea Fátima Hotel</a></li>
+            <li><a href="#">Hotel Estrela de fátima</a></li>
+            <li><a href="#">Hotel Regina</a></li>
+            <li><a href="#">Hotel Coração de Fátima</a></li>
+            <li><a href="#">Hotel Cruz Alta</a></li>
+            <li><a href="#">Hotel Genesis</a></li>
+            <li><a href="#">Hotel Rosa Mística</a></li>
+            <li><a href="#">Hotel Santa Mafalda</a></li>
+            <li><a href="#">Imperhotel</a></li>
+          </ul>  
+        </nav>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+          <div class="footer__title">COME WORK WITH US</div>
+          <section>
+            <p>Are you interested in working with the largest Hospitality group in Fátima?</p>
+            <p>Then, fill out the form with your information, and attach your CV.</p>
+            <a href="#" class="button empty">Come work with us <i class="fas fa-paper-plane"></i></a>
+          </section>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+          <div class="footer__title">HOW TO CONTACT US</div>
+          <div class="footer__contact">
+              <i class="fas fa-map-marker-alt"></i>
+            Avenida Santo Agostinho, 12, 1º G  <br>
+            2495-404 Fátima - Portugal
+          </div>
+            <div class="footer__contact">  
+                <i class="fas fa-phone"></i>
+            TEL: +351 249 531 101 <br>
+            FAX: +351 249 531 131
+          </div>
+            <div class="footer__contact">  
+                <i class="fas fa-envelope"></i>
+            booking@fatima-hotels.com 
+          </div>
+          <div class="footer__contact">  
+              <i class="fab fa-skype"></i>
+              skype: fatima-hotels
+          </div>
+          <a href="#" class="button empty">Acesso <i class="fas fa-user"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+            © FATIMA HOTELS 2019 	
+        </div>
+        <div class="col-6 text_right">
+            BY BILD CORP
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--end-footer-->
+</div>
+
+<!--SCRIPT -->
+<script src="js/jquery.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+<!--build:js js/main.min.js -->
+<script src="js/datepicker.js"></script>
+<script src="js/datepicker.en.js"></script>
+<!-- endbuild -->
+<script src="js/common.js"></script>
+<!--[if IE]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- END OF SCRIPT -->
+
+</body>
+</html>

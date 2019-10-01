@@ -1,0 +1,153 @@
+// Normally mainpage media styles
+// You can read about usage in https://github.com/paranoida/sass-mediaqueries 
+
+
+//styles for custom device width
+@include mq($max-width: 1200px) {
+  img{
+      max-width: 100%;
+  }
+  .booking .container:before{
+      display: none; 
+  }
+  .footer__social a {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+}
+@include mq($max-width: 992px) {
+    .header{
+        height: auto;
+        padding: 20px 0;
+    }
+    .header__main{
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 300px;
+        height: 100vh;
+        background: #fff;
+        z-index: 100;
+        box-sizing: border-box;
+        padding: 15px;
+        box-shadow: -2px 3px 0 rgba(0, 0, 0, 0.16);
+        overflow-y: auto;
+        .text_right{
+            text-align: left !important;
+        }
+    }
+    .header__menu ul{
+        display: block;
+        li{
+            display: block;
+            font-size: 20px;
+        }
+    }
+    .header__info{
+        font-size: 18px;
+    }
+    .header__lang{
+        padding-left: 0;
+    }
+    .main{
+        padding-top: 0;
+    }
+    .booking .button{
+        max-width: 300px;
+    }
+    .booking__item{
+        margin-bottom: 15px;
+    }
+    .booking{
+        .col-lg-2{
+            text-align: center;
+        }
+    }
+    .booking__title, .promocode{
+        text-align: left;
+    }
+    .promocode{
+        padding-top: 10px;
+    }
+    .booking{
+        height: auto;
+        padding-top: 150px;
+    }
+    .title{
+        font-size: 28px;
+    }
+    .subscribe{
+        text-align: center;
+        h6{
+            padding-bottom: 20px;
+        }
+       input:not(.button){
+           margin-bottom: 20px;
+       }
+    }
+    .footer__social{
+        margin-bottom: 30px;
+    }
+    .footer{
+        .col-lg-3{
+            margin-bottom: 20px;
+        }
+    }
+    .main__content{
+        padding-top: 150px;
+    }
+    .sidebar__acc-content{
+        display: none;
+    }
+    .sidebar{
+        margin-bottom: 40px;
+    }
+    .content__top h1{
+        font-size: 28px;
+    }
+    .pager{
+        text-align: left;
+        padding-top: 10px;
+    }
+    .hotel-list figure{
+        height: auto;
+        img{
+            width: 100%;
+            min-width: 100%;
+            height: auto;
+        }
+    }
+    .hotel-list article{
+        padding: 15px;
+        .text_right{
+            text-align: center !important;
+        }
+    }
+    .hotel-list__price, .hotel-list h5{
+        text-align: center;
+    }
+    .hotel-list nav, .hotel-list__price{
+        padding-bottom: 15px;
+    }
+}
+@include mq($max-width: 767px) {
+    .group__text, .group__plus{
+        text-align: center;
+    }
+    .group__plus{
+        padding-top: 10px;
+    }
+    .group__section .button{
+        font-size: 10px;
+        padding: 0.5em 1em;
+        margin: 0 3px;
+    }
+    .group__logo img {
+        max-width: 75%;
+    }
+    .sort{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,380 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="main__content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <!-- sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar__search">
+                        <input type="text" placeholder="Your search">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="sidebar__form">
+                        <div class="sidebar__form-item">
+                            <strong>Check-in date</strong>
+                            <input type="text" value="16 August" class='datepicker-here' >
+                        </div>
+                        <div class="sidebar__form-item">
+                            <strong>Check-out date</strong>
+                            <input type="text" value="16 August" class='datepicker-here' >
+                        </div>
+                        <div class="sidebar__form-item">
+                            <label>
+                                <input type="checkbox" name="s" id="s">
+                                <span>Only show hotels that have 
+                                        availability</span>
+                            </label>
+                        </div>
+                        <div class="sidebar__form-item">
+                            <button class="button">SEarch</button>
+                        </div>
+                    </div>
+                    <div class="sidebar__acc">
+                        <div class="sidebar__acc-trigger">
+                            <strong>Rating</strong>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="sidebar__acc-content">
+                            <ul>
+                                <li><a href="#">All</a></li>
+                                <li><label><input type="checkbox">Three-star hotels</label></li>
+                                <li><label><input type="checkbox">Four-star hotels</label></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar__acc-trigger">
+                            <strong>Budget </strong>
+                            <small>Per room per night</small>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="sidebar__acc-content">
+                            <ul>
+                                <li><a href="#">All</a></li>
+                                <li><label><input type="checkbox">from 30 to EUR40</label></li>
+                                <li><label><input type="checkbox">from 30 to EUR40</label></li>
+                                <li><label><input type="checkbox">from 30 to EUR40</label></li>
+                                <li><label><input type="checkbox">from 30 to EUR40</label></li>
+                                <li><label><input type="checkbox">from 30 to EUR40</label></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar__acc-trigger">
+                            <strong>Facilities </strong>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="sidebar__acc-content">
+                            <ul>
+                                <li><a href="#">All</a></li>
+                                <li><label><input type="checkbox">Wheelchair access</label></li>
+                                <li><label><input type="checkbox">Air conditioning</label></li>
+                                <li><label><input type="checkbox">Internet access</label></li>
+                                <li><label><input type="checkbox">24-hour reception</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+                <!-- /sidebar -->
+            </div>
+            <div class="col-lg-9">
+                <!-- content -->
+                <div class="content">
+                    <div class="content__top">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <h1>9  Results                                    </h1>
+                            </div>
+                            <div class="col-lg-6">
+                                <nav class="pager">
+                                    <ul>
+                                        <li><a href="#" ><i class="fas fa-chevron-left"></i></a></li>
+                                        <li><a href="#" class="active">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sort">
+                            Sort by:
+                            <label><input type="radio" name="n"> Name</label>
+                            <label><input type="radio" name="n"> Rating</label>
+                            <label><input type="radio" name="n"> Price</label>
+                    </div>
+                    <div class="hotel-list">
+                        <div class="hotel-list__row">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <figure><img src="img/hotel.jpg" alt=""></figure>
+                                </div>
+                                <div class="col-lg-7">
+                                    <article>
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <h4>Hotel Genesis </h4>
+                                                <h6>Fátima - Rua Santo António, nº 41 2495-430</h6>
+                                                <p>Located a few meters away from the Sanctuary of Fatima, HOTEL GENESIS is synonymous with tranquility and comfort, for that it has modern facilities and the care of an attentive staff at your... 
+                                                    <nav><a href="#">More info</a></nav>
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                 <h5>Starting from</h5>
+                                                <div class="hotel-list__price">
+                                                    <strong>€33</strong>
+                                                    <small>per room <br>
+                                                            per night</small>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="text_right"><a href="#" class="button">Book</a></div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel-list__row">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <figure><img src="img/hotel.jpg" alt=""></figure>
+                                </div>
+                                <div class="col-lg-7">
+                                    <article>
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <h4>Hotel Genesis </h4>
+                                                <h6>Fátima - Rua Santo António, nº 41 2495-430</h6>
+                                                <p>Located a few meters away from the Sanctuary of Fatima, HOTEL GENESIS is synonymous with tranquility and comfort, for that it has modern facilities and the care of an attentive staff at your... 
+                                                    <nav><a href="#">More info</a></nav>
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                 <h5>Starting from</h5>
+                                                <div class="hotel-list__price">
+                                                    <strong>€33</strong>
+                                                    <small>per room <br>
+                                                            per night</small>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="text_right"><a href="#" class="button">Book</a></div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel-list__row">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <figure><img src="img/hotel.jpg" alt=""></figure>
+                                </div>
+                                <div class="col-lg-7">
+                                    <article>
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <h4>Hotel Genesis </h4>
+                                                <h6>Fátima - Rua Santo António, nº 41 2495-430</h6>
+                                                <p>Located a few meters away from the Sanctuary of Fatima, HOTEL GENESIS is synonymous with tranquility and comfort, for that it has modern facilities and the care of an attentive staff at your... 
+                                                    <nav><a href="#">More info</a></nav>
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                 <h5>Starting from</h5>
+                                                <div class="hotel-list__price">
+                                                    <strong>€33</strong>
+                                                    <small>per room <br>
+                                                            per night</small>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="text_right"><a href="#" class="button">Book</a></div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel-list__row">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <figure><img src="img/hotel.jpg" alt=""></figure>
+                                </div>
+                                <div class="col-lg-7">
+                                    <article>
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <h4>Hotel Genesis </h4>
+                                                <h6>Fátima - Rua Santo António, nº 41 2495-430</h6>
+                                                <p>Located a few meters away from the Sanctuary of Fatima, HOTEL GENESIS is synonymous with tranquility and comfort, for that it has modern facilities and the care of an attentive staff at your... 
+                                                    <nav><a href="#">More info</a></nav>
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                 <h5>Starting from</h5>
+                                                <div class="hotel-list__price">
+                                                    <strong>€33</strong>
+                                                    <small>per room <br>
+                                                            per night</small>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="text_right"><a href="#" class="button">Book</a></div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel-list__row">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <figure><img src="img/hotel.jpg" alt=""></figure>
+                                </div>
+                                <div class="col-lg-7">
+                                    <article>
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <h4>Hotel Genesis </h4>
+                                                <h6>Fátima - Rua Santo António, nº 41 2495-430</h6>
+                                                <p>Located a few meters away from the Sanctuary of Fatima, HOTEL GENESIS is synonymous with tranquility and comfort, for that it has modern facilities and the care of an attentive staff at your... 
+                                                    <nav><a href="#">More info</a></nav>
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                 <h5>Starting from</h5>
+                                                <div class="hotel-list__price">
+                                                    <strong>€33</strong>
+                                                    <small>per room <br>
+                                                            per night</small>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="text_right"><a href="#" class="button">Book</a></div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel-list__row">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <figure><img src="img/hotel.jpg" alt=""></figure>
+                                </div>
+                                <div class="col-lg-7">
+                                    <article>
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <h4>Hotel Genesis </h4>
+                                                <h6>Fátima - Rua Santo António, nº 41 2495-430</h6>
+                                                <p>Located a few meters away from the Sanctuary of Fatima, HOTEL GENESIS is synonymous with tranquility and comfort, for that it has modern facilities and the care of an attentive staff at your... 
+                                                    <nav><a href="#">More info</a></nav>
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                 <h5>Starting from</h5>
+                                                <div class="hotel-list__price">
+                                                    <strong>€33</strong>
+                                                    <small>per room <br>
+                                                            per night</small>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="text_right"><a href="#" class="button">Book</a></div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel-list__row">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <figure><img src="img/hotel.jpg" alt=""></figure>
+                                </div>
+                                <div class="col-lg-7">
+                                    <article>
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <h4>Hotel Genesis </h4>
+                                                <h6>Fátima - Rua Santo António, nº 41 2495-430</h6>
+                                                <p>Located a few meters away from the Sanctuary of Fatima, HOTEL GENESIS is synonymous with tranquility and comfort, for that it has modern facilities and the care of an attentive staff at your... 
+                                                    <nav><a href="#">More info</a></nav>
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                 <h5>Starting from</h5>
+                                                <div class="hotel-list__price">
+                                                    <strong>€33</strong>
+                                                    <small>per room <br>
+                                                            per night</small>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="text_right"><a href="#" class="button">Book</a></div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel-list__row">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <figure><img src="img/hotel.jpg" alt=""></figure>
+                                </div>
+                                <div class="col-lg-7">
+                                    <article>
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <h4>Hotel Genesis </h4>
+                                                <h6>Fátima - Rua Santo António, nº 41 2495-430</h6>
+                                                <p>Located a few meters away from the Sanctuary of Fatima, HOTEL GENESIS is synonymous with tranquility and comfort, for that it has modern facilities and the care of an attentive staff at your... 
+                                                    <nav><a href="#">More info</a></nav>
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                 <h5>Starting from</h5>
+                                                <div class="hotel-list__price">
+                                                    <strong>€33</strong>
+                                                    <small>per room <br>
+                                                            per night</small>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="text_right"><a href="#" class="button">Book</a></div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__top">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <nav class="pager">
+                                    <ul>
+                                        <li><a href="#"><</a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /content -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- subscribe -->
+<div class="subscribe">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-3"><h6>NEWSLETTER</h6></div>
+            <div class="col-lg-3"><input type="text"></div>
+            <div class="col-lg-3"><input type="text"></div>
+            <div class="col-lg-3"><input type="submit" class="button" value="Submit"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}
